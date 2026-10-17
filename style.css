@@ -45,6 +45,7 @@ body {
     outline: none;
     height: 25px;
     width: 700px;
+    padding: 5px 15px;
 }
 
 .search-row img {
