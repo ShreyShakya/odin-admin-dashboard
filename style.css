@@ -2,23 +2,112 @@
     margin: 0;
 }
 
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+/* main container css */
+
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 20% 80%;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 150px 1fr;
 }
+
+/* header css */
 
 .header {
     background-color: white;
     grid-column: 2 / 3;
 }
 
+
+/* sidebar cc */
+
 .sidebar {
-    background-color: skyblue;
+    background-color: #578EF5;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
+    justify-items: start;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
 }
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    column-gap: 10px;
+}
+
+.title > img {
+    height: 50px;
+    filter: invert(100%) sepia(100%) saturate(0%) brightness(200%) contrast(100%);
+}
+
+.title > p {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.primary-links {
+    margin-top: 50px;
+}
+
+.primary-links ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-left: 20px;
+}
+
+.primary-links ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.primary-links ul li img {
+    height: 25px;
+    filter: invert(100%) sepia(100%) saturate(0%) brightness(200%) contrast(100%);
+}
+
+.secondary-links {
+    margin-top: 50px;
+}
+
+.secondary-links ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-left: 20px;
+}
+
+.secondary-links ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.secondary-links ul li img {
+    height: 25px;
+    filter: invert(100%) sepia(100%) saturate(0%) brightness(200%) contrast(100%);
+}
+
+/* main-content css */
 
 .main-content {
     background-color: whitesmoke;
