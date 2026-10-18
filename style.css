@@ -296,3 +296,32 @@ body {
     font-size: 0.9rem;
     color: rgb(85, 85, 85);
 }
+
+.trending {
+    background-color: white;
+    margin-right: 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 30px;   
+    font-size: 0.9rem;
+}
+
+.trending-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.trending-profile:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.trending img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.trending-username {
+    color: rgb(85, 85, 85);
+}
