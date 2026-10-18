@@ -210,7 +210,7 @@ body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 25%;
 }
 
 .projects-section > p {
@@ -222,10 +222,9 @@ body {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     row-gap: 30px;
     margin: 10px 30px;
-    column-gap: 30px;
 }
 
 .card {
@@ -260,4 +259,40 @@ body {
 
 .card-icons > img {
     height: 25px;
+}
+
+.sidebar-widgets > p {
+    margin-top: 30px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.announcement {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.announcement-items:not(:last-child) {
+    border-bottom: 2px solid lightgray;
+}
+
+.announcement-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.announcement-items:not(:first-child) {
+    margin-top: 10px;
+}
+
+.announcement-text {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: rgb(85, 85, 85);
 }
