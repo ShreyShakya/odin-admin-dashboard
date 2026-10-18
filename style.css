@@ -9,7 +9,7 @@ body {
 /* main container css */
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 170px 1fr;
@@ -129,7 +129,7 @@ body {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
 }
 
@@ -209,4 +209,55 @@ body {
     background-color: whitesmoke;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.projects-section > p {
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    row-gap: 30px;
+    margin: 10px 30px;
+    column-gap: 30px;
+}
+
+.card {
+    background-color: white;
+    height: 150px;
+    width: 350px;
+    border-radius: 8px;
+    border-left: 6px solid orange;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card-paragraph {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: rgb(85, 85, 85);
+}
+
+.card-icons {
+    display: flex;
+    column-gap: 20px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    margin-top: 10px;
+}
+
+.card-icons > img {
+    height: 25px;
 }
